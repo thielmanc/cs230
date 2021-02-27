@@ -4,11 +4,11 @@ main {
 }
 
 p {
-    color: crimson;
+    color: rgb(119, 1, 24);
 }
 
 .about {
-    background: darkgoldenrod;
+    background: rgb(207, 150, 5);
     padding: 8px;
 }
 
