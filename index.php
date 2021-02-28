@@ -40,11 +40,11 @@
 
         </div>  <div class="column">
             <div class="card">
-                <img src="images/4.jpeg">
+                <img src="images/4.jpg">
                 <div class="container">
                     <h2>Editor</h2>
-                    <p>Larry the Lobster</p>
-                    <p>Email: livinlikelarry@gmail.com</p>
+                    <p>Sam Kozak</p>
+                    <p>Email: sdk0010@mix.wvu.edu</p>
                 </div>
             </div>
         </div>
