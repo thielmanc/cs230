@@ -1,7 +1,7 @@
 <?php
 
 $servename = "localhost";
-$DBuname = "phpmydmin";
+$DBuname = "phpmyadmin";
 $DBPass = "Moneybagz925";
 $DBname = "cs230";
 
