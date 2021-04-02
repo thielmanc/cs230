@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_POST["signup-submit"])) {
-     
+
     require "dbhandler.php";
 
     $username = $_POST["uname"];
@@ -14,9 +14,7 @@ if (isset($_POST["signup-submit"])) {
     if ($passw !== $passw_rep) {
         header("Location: ../signup.php?error=diffPasswords");
         exit();
-    }
-
-    else {
+    } else {
 
         $sql = "SELECT uname FROM users WHERE uname=?";
         $stmt = mysqli_stmt_init($conn);
@@ -24,8 +22,7 @@ if (isset($_POST["signup-submit"])) {
         if (!mysqli_stmt_prepare($stmt, $sql)) {
             header("Location: ..//signup.php?error/SQLInjection");
             exit();
-        }
-        else{
+        } else {
             mysqli_stmt_bind_param($stmt, "s", $username);
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
@@ -34,17 +31,15 @@ if (isset($_POST["signup-submit"])) {
             if ($check > 0) {
                 header("Location: ..//signup.php?error/UsernameTaken");
                 exit();
-            }
-            else{
+            } else {
                 $sql = "INSERT INTO users (lname, fname, email, uname, password) VALUES (?, ?, ?, ?, ?)";
                 $stmt = mysqli_stmt_init($conn);
-            
+
 
                 if (!mysqli_stmt_prepare($stmt, $sql)) {
                     header("Location: ..//signup.php?error/SQLInjection");
                     exit();
-                }
-                else {
+                } else {
                     $hashed = password_hash(passw, PASSWORD_BCRYPT);
                     mysqli_stmt_bind_param($stmt, "sssss", $lname, $fname, $email, $username, $hashed);
                     mysqli_stmt_execute($stmt);
@@ -56,17 +51,12 @@ if (isset($_POST["signup-submit"])) {
                     header("Location: ..//signup.php?signup=success");
                     exit();
                 }
-
             }
         }
         mysqli_stmt_close($stmt);
         mysqli_close($conn);
     }
-
-}
-else{
+} else {
     header("Location: ..//signup.php");
     exit();
 }
-
-
