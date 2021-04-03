@@ -1,15 +1,15 @@
 <?php
 
-if (isset($_POST["signup-submit"])) {
+if (isset($_POST['signup-submit'])) {
 
-    require "dbhandler.php";
+    require 'dbhandler.php';
 
-    $username = $_POST["uname"];
-    $email = $_POST["email"];
-    $passw = $_POST["pwd"];
-    $passw_rep = $_POST["con-pwd"];
-    $fname = $_POST["fname"];
-    $lname = $_POST["lname"];
+    $username = $_POST['uname'];
+    $email = $_POST['email'];
+    $passw = $_POST['pwd'];
+    $passw_rep = $_POST['con-pwd'];
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
 
     if ($passw !== $passw_rep) {
         header("Location: ../signup.php?error=diffPasswords");
@@ -40,7 +40,7 @@ if (isset($_POST["signup-submit"])) {
                     header("Location: ..//signup.php?error/SQLInjection");
                     exit();
                 } else {
-                    $hashed = password_hash(passw, PASSWORD_BCRYPT);
+                    $hashed = password_hash($passw, PASSWORD_BCRYPT);
                     mysqli_stmt_bind_param($stmt, "sssss", $lname, $fname, $email, $username, $hashed);
                     mysqli_stmt_execute($stmt);
                     mysqli_stmt_store_result($stmt);
