@@ -29,6 +29,8 @@ if (isset($_POST['prof-submit'])) {
     }
     if ($file_size > 4*MB) {
         header("Location: ../profile.php?error=FileSizeExceeded");
+        exit();
+
     }
 
     else{
