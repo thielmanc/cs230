@@ -39,11 +39,11 @@ if (isset($_POST['gallery-submit'])) {
 
         $destination = '../gallery/'.$new_name;
 
-        $sql = "INSERT INTO gallery (title, descript, picpath) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO gallery (title, descript, picpath) VALUES (?,?,?)";
         $stmt = mysqli_stmt_init($conn);
 
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: ..//admin.php?error/SQLInjection");
+            header("Location: ../admin.php?error/SQLInjection");
             exit();
         } else {
 

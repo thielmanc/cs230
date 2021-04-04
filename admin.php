@@ -30,9 +30,11 @@ require 'includes/dbhandler.php';
 
             <form action="includes/gallery-helper.php" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
-                    <img src="images/adm.png" alt="profile pic" onclick="triggered();" id="gallery-display">
+                    <img src="images/adm.jpeg" alt="profile pic" onclick="triggered();" id="gallery-display">
+
                     <input type="text" name="title" class="form-control" placeholder="title">
-                    <input type="file" name="gallery-image" id="gallery-image" onchange="preview(this)" class="form-control" style="display: none;">
+                    <input type="file" name="gallery-image" id="gallery-image" onchange="preview(this)"
+                        class="form-control" style="display: none;">
 
                 </div>
                 <div class="form-group">

@@ -33,7 +33,7 @@ if (isset($_POST['prof-submit'])) {
 
     }
 
-    else{
+    else {
         $new_name = uniqid('', true).".".$ext;
 
         $destination = '../profiles/'.$new_name;
@@ -48,7 +48,7 @@ if (isset($_POST['prof-submit'])) {
         exit();
     }
 
-} else{
+} else {
     header("Location: ../profile.php");
     exit();
 }
