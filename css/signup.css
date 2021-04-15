@@ -1,6 +1,6 @@
 .bg-cover {
     background-image: url("../images/bg.jpeg");
-    height: 100vh;
+    height: auto;
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
@@ -19,7 +19,7 @@
 
 .signup-form {
     border-radius: 50px;
-    background-color: #d5d5d5;
+    background-color: rgb(247, 239, 225);
     padding: 20px;
     text-align: center;
 }

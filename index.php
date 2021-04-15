@@ -4,10 +4,10 @@
 
 <main>
     <link rel="stylesheet" href="css/about.css">
-    
+    <div class="bg-cover">
     <div class="about">
         <h1>About Us</h1>
-        <p>Meet our amazing staff!</p>
+        <p2>Meet our amazing staff!</p2>
     </div>
     <div class="row">
 
@@ -54,5 +54,5 @@
         </div>
     </div>
 
-
+    </div>
 </main>
