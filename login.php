@@ -47,7 +47,6 @@ require 'includes/header.php';
 
 
                     <div class="form-floating">
-                        <label for="floatingInput">Username/Email</label>
                         <input type="text" class="form-control" name="uname-email" id="floatingInput"
                             placeholder="username/email">
 
@@ -55,7 +54,6 @@ require 'includes/header.php';
 
 
                     <div class="form-floating">
-                        <label for="floatingPassword">Password</label>
                         <input type="password" class="form-control" name="pwd" id="floatingPassword"
                             placeholder="password">
 

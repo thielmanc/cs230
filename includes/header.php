@@ -19,7 +19,7 @@ session_start();
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="d-md-flex d-block flex-row mx-md-auto mx-0">
-            <a class="navbar-brand" href="#">Cam's Website</a>
+            <a class="navbar-brand" href="#">Cam's Game Reviews</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,10 @@ session_start();
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="profile.php">Profile</a>
-                    </li>';
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="admin.php">Admin</a>
+                </li>';
                     }
                     else {
                         echo '<li class="nav-item">

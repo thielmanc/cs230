@@ -10,7 +10,7 @@ require 'includes/header.php';
 <?php
 include_once 'includes/dbhandler.php';
 $sql = "SELECT * FROM gallery ORDER BY upload_date DESC";
-$query = mysqli_query($conn, $sqli);
+$query = mysqli_query($conn, $sql);
 
 while($row = mysqli_fetch_assoc($query)){
     echo '<div class="card">

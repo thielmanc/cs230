@@ -1,8 +1,8 @@
 <?php
 
-$servename = "localhost";
+$servename = "127.0.0.1";
 $DBuname = "root";
-$DBPass = "Cameron925";
+$DBPass = "cs230lab";
 $DBname = "cs230";
 
 $conn = mysqli_connect($servename, $DBuname, $DBPass, $DBname);
