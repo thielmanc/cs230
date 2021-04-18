@@ -21,7 +21,7 @@ require 'includes/review-helper.php';
         <i class="fa fa-star fa-2x star-rev" data-index="5"></i>
     </div>
     <div class="form-group;" style="margin-top: 15px;">
-    <label class="title-group" for="review-title" style="font-size: 16px; font-weight: bold;">Title</label>
+    <label class="title-label" for="review-title" style="font-size: 16px; font-weight: bold;">Title</label>
     <input type="text" name="review-title" id="review-title" style="width: 100%; margin-bottom: 10px;" >
     <textarea name="review" id="review-text" cols="85" rows="3" placeholder="Enter a comment..."></textarea>
 
@@ -30,7 +30,7 @@ require 'includes/review-helper.php';
     </div>
 
     <div class="form-group">
-    <button class="btn btn-outline danger" type="submit" name="review-submit" id="review-submit" style="width: 100%">  </button> 
+    <button class="btn btn-outline-danger" type="submit" name="review-submit" id="review-submit" style="width: 100%">Submit</button> 
     </div>
 
        

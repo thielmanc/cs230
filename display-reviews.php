@@ -1,8 +1,8 @@
 <?php
 
-$servename = "localhost";
+$servename = "127.0.0.1";
 $DBuname = "root";
-$DBPass = "Cameron925";
+$DBPass = "cs230lab";
 $DBname = "cs230";
 
 $conn = mysqli_connect($servename, $DBuname, $DBPass, $DBname);
@@ -16,7 +16,7 @@ $item = $_GET['id'];
 
 $sql = "SELECT * FROM reviews WHERE itemid= '$item'";
 
-$result = mysqli_query($conn, $sqli);
+$result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0){
     while ($row = mysqli_fetch_assoc($result)){

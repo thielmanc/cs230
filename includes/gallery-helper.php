@@ -14,8 +14,8 @@ if (isset($_POST['gallery-submit'])) {
     $file_error = $file['error'];
     $file_size = $file['size'];
 
-    $title = $_POST('title');
-    $descript = $_POST('descript');
+    $title = $_POST['title'];
+    $descript = $_POST['descript'];
     
 
 
