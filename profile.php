@@ -4,7 +4,9 @@ require 'includes/dbhandler.php';
 ?>
 
 <main>
+<div class="bg-cover">
     <link rel="stylesheet" href="css/profile.css">
+    
     <script>
     function triggered() {
         document.querySelector("#prof-image").click();
@@ -41,7 +43,7 @@ if (isset($_SESSION['uid'])) {
             <form action="includes/upload-helper.php" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <img src="<?php echo $photo;?>" alt="profile pic" onclick="triggered();" id="prof-display">
-                    <label for="prof-image" id="uname-style"><?php echo $prof_user?></label>
+                    <label for="prof-image" id="uname-style">@<?php echo $prof_user?></label>
                     <input type="file" name="prof-image" id="prof-image" onchange="preview(this)" class="form-control" style="display: none;"> 
 
                 </div>
@@ -66,5 +68,5 @@ if (isset($_SESSION['uid'])) {
 }
 
 ?>
-
+</div>
 </main>

@@ -46,7 +46,7 @@ require 'includes/header.php';
                     <p class="hint-text">Log in to your account!</p>
 
 
-                    <div class="form-floating">
+                    <div class="form-floating" >
                         <input type="text" class="form-control" name="uname-email" id="floatingInput"
                             placeholder="username/email">
 

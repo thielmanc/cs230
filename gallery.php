@@ -3,9 +3,10 @@ require 'includes/header.php';
 ?>
 
 <main>
+<div class="bg-cover">
 <link rel="stylesheet" href="css/gallery.css">
 
-<h1>Gallery</h1>
+<h1>Games</h1>
 <div class="gallery-container">
 <?php
 include_once 'includes/dbhandler.php';
@@ -23,6 +24,6 @@ while($row = mysqli_fetch_assoc($query)){
 }
 ?>
 </div>
-
+</div>
 
 </main>

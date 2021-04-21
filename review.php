@@ -5,6 +5,7 @@ require 'includes/review-helper.php';
 ?>
 
 <main>
+
     <span id="testAvg"></span>
     <div class="container" align="center" style="max-width: 800px;">
     
@@ -20,16 +21,17 @@ require 'includes/review-helper.php';
         <i class="fa fa-star fa-2x star-rev" data-index="4"></i>
         <i class="fa fa-star fa-2x star-rev" data-index="5"></i>
     </div>
+    
     <div class="form-group;" style="margin-top: 15px;">
     <label class="title-label" for="review-title" style="font-size: 16px; font-weight: bold;">Title</label>
-    <input type="text" name="review-title" id="review-title" style="width: 100%; margin-bottom: 10px;" >
+    <input type="text" name="review-title" id="review-title" placeholder="Title" style="width: 100%; margin-bottom: 10px;" >
     <textarea name="review" id="review-text" cols="85" rows="3" placeholder="Enter a comment..."></textarea>
 
     <input type="hidden" name="rating" id="rating">
     <input type="hidden" name="item_id" value="<?php echo $_GET['id'];?>">
     </div>
 
-    <div class="form-group">
+    <div class="form-group" style="margin-top: 15px;">
     <button class="btn btn-outline-danger" type="submit" name="review-submit" id="review-submit" style="width: 100%">Submit</button> 
     </div>
 

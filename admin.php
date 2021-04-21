@@ -4,6 +4,7 @@ require 'includes/dbhandler.php';
 ?>
 
 <main>
+<div class="bg-cover">
     <link rel="stylesheet" href="css/profile.css">
     <script>
     function triggered() {
@@ -32,7 +33,7 @@ require 'includes/dbhandler.php';
                 <div class="form-group">
                     <img src="images/adm.jpeg" alt="profile pic" onclick="triggered();" id="gallery-display">
 
-                    <input type="text" name="title" class="form-control" placeholder="title">
+                    <input type="text" name="title" class="form-control" placeholder="title" style="margin-top: 15px;">
                     <input type="file" name="gallery-image" id="gallery-image" onchange="preview(this)"
                         class="form-control" style="display: none;">
 
@@ -60,5 +61,6 @@ require 'includes/dbhandler.php';
 }
 
 ?>
+</div>
 
 </main>

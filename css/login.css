@@ -1,6 +1,6 @@
 .bg-cover {
-    background-image: url("../images/bg.jpeg");
-    height: auto;
+    background-image: url("../images/navy.jpeg");
+    height: 100%;
     background-position: center;
     background-size: cover;
     background-attachment: scroll;

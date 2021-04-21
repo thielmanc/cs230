@@ -1,13 +1,22 @@
 h1 {
     text-align: center;
+    color: red
+}
+
+.bg-cover {
+    background-image: url("../images/navy.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover%;
 }
 
 h3 {
-    color: yellow;
+    color: red;
 }
 
 p {
-    color: grey;
+    color: white;
 }
 
 img {
@@ -34,7 +43,8 @@ img {
 }
 
 .gallery-container a {
-    background-color: rgb(5, 5, 94);
+    background-color: darkgray;
+    height: 100%;
     background-position: center;
     background-size: cover;
     border-radius: 10px;
